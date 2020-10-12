@@ -1,0 +1,9 @@
+replicaCount: 2
+service:
+  type: NodePort
+  port: 5000
+  targetPort: 5000
+image:
+  repository: ehab123/hello-python
+  pullPolicy: IfNotPresent
+  app: hello
